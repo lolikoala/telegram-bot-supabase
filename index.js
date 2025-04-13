@@ -45,5 +45,10 @@ bot.on("message", async (msg) => {
     return;
   }
 
- await bot.sendMessage(chatId, "Hola! Puedes escribir:\\n• nota: comprar leche\\n• recuérdame mañana a las 9...");
+ await bot.sendMessage(chatId, [
+  "Hola! Puedes escribir:",
+  "• nota: comprar leche",
+  "• recuérdame mañana a las 9..."
+].join("\n"));
+
 });
